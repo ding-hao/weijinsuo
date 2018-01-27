@@ -1,0 +1,407 @@
+// 主题颜色可以设置一个变量保存
+@main-color: #e92322;
+@color: #e92322;
+* {
+    margin: 0;
+    padding: 0;
+}
+#header{
+    // 头部上部分
+    .topbar {
+        border-bottom: 1px solid #ccc;
+        .container {
+            >.row {
+                
+               >div {
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 40px;
+                        z-index: 99;
+                        display: none;
+                        
+                    }
+                    
+                    &+div {
+                    border-left: 1px solid #ccc;
+                    }
+                    &:first-child:hover {
+                        img {
+                            display: block;
+                        }
+                    }
+                    a.btn-sm {
+                        background-color: @main-color;
+                        color: #fff;
+                    }
+               } 
+               
+            }
+        }
+    }
+   
+    // 头部导航部分logo部分
+   .navbar-default {
+        background-color: #fff;
+       
+        
+        margin-bottom: 0;
+        border-bottom: 1px solid #ccc;
+        .container{
+            .navbar-header {
+                .navbar-toggle {
+                    margin-top: 23px;
+                }
+                .navbar-brand {
+                height: 80px;
+                line-height: 50px;
+                    >i.icon-icon {
+                        font-size: 30px;
+                        color: @main-color;
+                    }
+                    >i.icon-logo {
+                        font-size: 30px;
+                        color: #000;
+                    }
+                }
+            }
+            
+            .navbar-collapse {
+                
+               &>ul {
+                   >li {
+                       &.active {
+                           
+                           >a {
+                            border-bottom: 2px solid @main-color;
+                            background-color: #fff;
+                            
+                           }
+                        
+                         
+                       }
+                       &:hover a {
+                        border-bottom: 2px solid @main-color;
+                       }
+                       >a {
+                        height: 80px;
+                        line-height: 50px;  
+                       }
+                   }
+                   
+               }
+            }
+        }
+    }
+}
+// 轮播图部分
+#slide {
+    .carousel-inner {
+       .big-img{
+           display: block;
+           height: 410px;
+           background-position: center center;
+       } 
+       .small-img img {
+
+            width: 100%;
+       }
+    }
+}
+
+// //支付交易保障部分
+#feature{
+    border-bottom: 1px solid #ccc;
+    .container {
+        padding: 40px 0;
+        .row{
+            .media{
+                >a {
+                    text-decoration: none;
+                    color: #666;
+                    &:hover {
+                        color: @color;
+                    }
+                }
+                &:first-child {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+//预约部分
+#bespeak{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    .container{
+        .pull-left {
+            >span{
+                color: #a94442;
+            }
+            >a{
+                color: #a94442;
+            }
+        }
+    }
+}
+
+//产品部分
+#products{
+    background-color: #eee;
+    padding-bottom: 40px;
+    .container{
+        .ul-wrapper{
+            >ul{
+                >li{
+
+                    >a{
+                        color: #666;
+                        font-size: 16px;
+                        &:hover{
+                            
+                            border-color: transparent;
+                        }
+                    }
+                    &.active{
+                        >a{                           
+                            border-color: transparent;
+                            background-color: transparent;
+                            border-bottom: 3px solid @color;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .row{
+                    .product{
+                       
+                        position: relative;
+                        margin-top: 20px;
+                        background-color: #fff;
+                        &.active{
+                            background-color: @color;
+                            color: #fff;
+                            &::before{
+                                content: "\e915";
+                                font-family: 'itcast';
+                                font-size: 30px;
+                                
+                                position: absolute;
+                                top: -6px;
+                                left: 0;
+                            }
+                        }
+                        .product-left{
+                            // position: absolute;
+                            height: 160px;
+                            margin-right: 120px;
+                            padding: 15px;
+                            border-right: 1px dashed #ccc;
+                            >h4{
+                                text-align: center;
+                                // color: #fff;
+                                
+                            }
+                            
+                            >div{
+                                width: 50%;
+                                &:nth-of-type(2n){
+                                    text-align: right;
+                                }
+                            }
+                            p{
+                                margin-bottom: 0;
+                                // color: #fff;
+                            }
+                            
+                            
+                        }
+                        .product-right{
+                            width: 120px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 160px;
+                            padding: 30px 0;
+                           
+                            &::before{
+                                content: "";
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: -8px;
+                                top: -8px;
+                                background-color: #eee;
+                                
+                                
+                            }
+                            &::after{
+                                content: "";
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: -8px;
+                                bottom: -8px;
+                                background-color: #eee;
+                                
+                                
+                            }
+                            >p{
+                                text-align: center;
+                                color: #666;
+                                >strong{
+                                    font-size: 30px;
+                                }
+                            }
+                            
+                            .btn-default{
+                                position: absolute;
+                                &:first-of-type{
+                                    left: 0;
+                                    top: 8px;
+                                    color: @color;
+                                    border: 1px solid @color;
+                                }
+                                &:last-of-type{
+                                    right: 0px;
+                                    top: 8px;
+                                    color: green;
+                                    border: 1px solid green;
+                                }
+                            }
+                            
+                            
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//新闻部分
+#news{
+    margin-top: 40px;
+    .container{
+        .row{
+            >div:first-of-type{ 
+                >h4{
+                    padding-bottom: 10px;
+                    text-align: center;
+                    border-bottom: 1px dashed #ccc;
+                    position: relative;
+                    &::after{
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    position: absolute;
+                    right: -8px;
+                    bottom: -5px;
+                }
+                
+
+                }
+            }
+            >div{
+                ul.nav{
+                    border-bottom: none;
+                    >li{
+                        @media (max-width:992px) {
+                            width: 25%;
+                            a{
+                                width: 62px;
+                                height: 62px;
+                                margin: 0 auto;
+                            }
+                        }
+                        &.active{
+                            >a{
+                                // text-decoration: none;
+                                border-color: transparent;
+                                background-color: #e92322;
+                                
+                            }
+                        }
+                        >a{
+                            border-color: transparent;
+                            // text-decoration: none;
+                            color: #666;
+                            display: block;
+                            border-radius: 50%;
+                            &:hover{
+                                background-color: #e92322;
+                                    }
+                           >i{
+                            font-size: 30px;
+                            
+
+                            } 
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 合作伙伴部分
+#collaborate{
+    .container{
+        
+        >h3{
+            text-align: center;
+        }
+        >ul.blogroll{
+            >li{
+                
+                list-style: none;
+                float: left;
+                width: 11.11111111111111%;
+                >a{
+                    text-decoration: none;
+                    color: #666;
+                    >i{
+                        font-size: 60px;
+                        &:hover{
+                            color: @color;
+                        }
+                    }
+                    // @media(max-width:768px) {
+                    //     >i {
+                    //         font-size: 30px;
+                    //     }
+                    // }
+                    @media (max-width:768px) {
+                        >i{
+                            font-size: 30px;
+                        }
+                    } 
+                }
+            }
+        }
+
+        
+        
+    }
+    
+    
+}

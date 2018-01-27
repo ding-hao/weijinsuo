@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header .topbar {
+  border-bottom: 1px solid #ccc;
+}
+#header .topbar .container > .row > div {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+#header .topbar .container > .row > div img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  z-index: 99;
+  display: none;
+}
+#header .topbar .container > .row > div + div {
+  border-left: 1px solid #ccc;
+}
+#header .topbar .container > .row > div:first-child:hover img {
+  display: block;
+}
+#header .topbar .container > .row > div a.btn-sm {
+  background-color: #e92322;
+  color: #fff;
+}
+#header .navbar-default {
+  background-color: #fff;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+#header .navbar-default .container .navbar-header .navbar-toggle {
+  margin-top: 23px;
+}
+#header .navbar-default .container .navbar-header .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+#header .navbar-default .container .navbar-header .navbar-brand > i.icon-icon {
+  font-size: 30px;
+  color: #e92322;
+}
+#header .navbar-default .container .navbar-header .navbar-brand > i.icon-logo {
+  font-size: 30px;
+  color: #000;
+}
+#header .navbar-default .container .navbar-collapse > ul > li.active > a {
+  border-bottom: 2px solid #e92322;
+  background-color: #fff;
+}
+#header .navbar-default .container .navbar-collapse > ul > li:hover a {
+  border-bottom: 2px solid #e92322;
+}
+#header .navbar-default .container .navbar-collapse > ul > li > a {
+  height: 80px;
+  line-height: 50px;
+}
+#slide .carousel-inner .big-img {
+  display: block;
+  height: 410px;
+  background-position: center center;
+}
+#slide .carousel-inner .small-img img {
+  width: 100%;
+}
+#feature {
+  border-bottom: 1px solid #ccc;
+}
+#feature .container {
+  padding: 40px 0;
+}
+#feature .container .row .media > a {
+  text-decoration: none;
+  color: #666;
+}
+#feature .container .row .media > a:hover {
+  color: #e92322;
+}
+#feature .container .row .media:first-child {
+  margin-top: 15px;
+}
+#bespeak {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+#bespeak .container .pull-left > span {
+  color: #a94442;
+}
+#bespeak .container .pull-left > a {
+  color: #a94442;
+}
+#products {
+  background-color: #eee;
+  padding-bottom: 40px;
+}
+#products .container .ul-wrapper > ul > li > a {
+  color: #666;
+  font-size: 16px;
+}
+#products .container .ul-wrapper > ul > li > a:hover {
+  border-color: transparent;
+}
+#products .container .ul-wrapper > ul > li.active > a {
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+#products .container .tab-content .tab-pane .row .product {
+  position: relative;
+  margin-top: 20px;
+  background-color: #fff;
+}
+#products .container .tab-content .tab-pane .row .product.active {
+  background-color: #e92322;
+  color: #fff;
+}
+#products .container .tab-content .tab-pane .row .product.active::before {
+  content: "\e915";
+  font-family: 'itcast';
+  font-size: 30px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+#products .container .tab-content .tab-pane .row .product .product-left {
+  height: 160px;
+  margin-right: 120px;
+  padding: 15px;
+  border-right: 1px dashed #ccc;
+}
+#products .container .tab-content .tab-pane .row .product .product-left > h4 {
+  text-align: center;
+}
+#products .container .tab-content .tab-pane .row .product .product-left > div {
+  width: 50%;
+}
+#products .container .tab-content .tab-pane .row .product .product-left > div:nth-of-type(2n) {
+  text-align: right;
+}
+#products .container .tab-content .tab-pane .row .product .product-left p {
+  margin-bottom: 0;
+}
+#products .container .tab-content .tab-pane .row .product .product-right {
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 160px;
+  padding: 30px 0;
+}
+#products .container .tab-content .tab-pane .row .product .product-right::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  background-color: #eee;
+}
+#products .container .tab-content .tab-pane .row .product .product-right::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  bottom: -8px;
+  background-color: #eee;
+}
+#products .container .tab-content .tab-pane .row .product .product-right > p {
+  text-align: center;
+  color: #666;
+}
+#products .container .tab-content .tab-pane .row .product .product-right > p > strong {
+  font-size: 30px;
+}
+#products .container .tab-content .tab-pane .row .product .product-right .btn-default {
+  position: absolute;
+}
+#products .container .tab-content .tab-pane .row .product .product-right .btn-default:first-of-type {
+  left: 0;
+  top: 8px;
+  color: #e92322;
+  border: 1px solid #e92322;
+}
+#products .container .tab-content .tab-pane .row .product .product-right .btn-default:last-of-type {
+  right: 0px;
+  top: 8px;
+  color: green;
+  border: 1px solid green;
+}
+#news {
+  margin-top: 40px;
+}
+#news .container .row > div:first-of-type > h4 {
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+#news .container .row > div:first-of-type > h4::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: -8px;
+  bottom: -5px;
+}
+#news .container .row > div ul.nav {
+  border-bottom: none;
+}
+@media (max-width: 992px) {
+  #news .container .row > div ul.nav > li {
+    width: 25%;
+  }
+  #news .container .row > div ul.nav > li a {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+  }
+}
+#news .container .row > div ul.nav > li.active > a {
+  border-color: transparent;
+  background-color: #e92322;
+}
+#news .container .row > div ul.nav > li > a {
+  border-color: transparent;
+  color: #666;
+  display: block;
+  border-radius: 50%;
+}
+#news .container .row > div ul.nav > li > a:hover {
+  background-color: #e92322;
+}
+#news .container .row > div ul.nav > li > a > i {
+  font-size: 30px;
+}
+#collaborate .container > h3 {
+  text-align: center;
+}
+#collaborate .container > ul.blogroll > li {
+  list-style: none;
+  float: left;
+  width: 11.11111111111111%;
+}
+#collaborate .container > ul.blogroll > li > a {
+  text-decoration: none;
+  color: #666;
+}
+#collaborate .container > ul.blogroll > li > a > i {
+  font-size: 60px;
+}
+#collaborate .container > ul.blogroll > li > a > i:hover {
+  color: #e92322;
+}
+@media (max-width: 768px) {
+  #collaborate .container > ul.blogroll > li > a > i {
+    font-size: 30px;
+  }
+}
